@@ -255,7 +255,7 @@ options.add_experimental_option('prefs', {
 try:
     navegador = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 except:
-    service = Service(executable_path='E:\Chrome temporario\chromedriver.exe')
+    service = Service(executable_path='caminho do webdriver')
     options = webdriver.ChromeOptions()
     options.add_experimental_option('prefs', {
         'download.default_directory': str(Path.cwd()),
