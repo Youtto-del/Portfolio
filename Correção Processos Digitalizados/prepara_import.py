@@ -32,7 +32,7 @@ def prepara_import():
         elif linha[1]['Status 2'] == 'Migrado' or linha[1]['Status 2'] == 'Digitalizado':
             insercao = [linha[1]['Processo'], linha[1]['originario_2'], linha[1]['Status 2']]
             resultado_linha.append(insercao)
-        elif linha[1]['Status 2'] == 'Migrado' or linha[1]['Status 3'] == 'Digitalizado':
+        elif linha[1]['Status 3'] == 'Migrado' or linha[1]['Status 3'] == 'Digitalizado':
             insercao = [linha[1]['Processo'], linha[1]['originario_3'], linha[1]['Status 3']]
             resultado_linha.append(insercao)
         else:
